@@ -1,0 +1,69 @@
+nav {
+	font-family: Raleway;
+}
+
+
+.nav-desktop-1 {
+	background: rgba(0, 0, 0, 0.85);
+	height: 50px;
+	padding-right: 20px;
+	a {
+		color: #fff;
+	}
+	a:hover {
+		color: #fff;
+	}
+	a:visited {
+		color: #fff
+	}
+	.currency {
+		float: left;
+	}
+	.shoestore {
+		text-align: center;
+	}
+	span {
+		font-family: Covered By Your Grace;
+		font-size: 2em;
+	}
+	.signup {
+		float: right;
+	}
+	.currency, .signup {
+		padding-top: 10px;
+	}
+}
+
+.nav-desktop-2 {
+	background: rgba(0, 0, 0, 0.1);
+	height: 50px;
+	text-align: center;
+	padding-top: 15px;
+	white-space: nowrap;
+	padding-left: 14%;
+	padding-right: 14%;
+	a {
+		color: rgba(0, 0, 0, 0.75);
+	}
+	a:hover {
+		color: rgba(0, 0, 0, 1);
+		transition: ease-in-out 0.15s;
+	}
+	a:visited {
+		color: rgba(0, 0, 0, 0.85);
+	}
+}
+
+
+.nav-mobile {
+	.logo {
+
+	}
+	.mobile-menu-button {
+
+	}
+	ul {
+		list-style-type: none;
+	}
+
+}
