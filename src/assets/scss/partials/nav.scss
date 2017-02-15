@@ -38,7 +38,7 @@ nav {
 	background: rgba(0, 0, 0, 0.1);
 	height: 50px;
 	text-align: center;
-	padding-top: 15px;
+	padding-top: 8px;
 	white-space: nowrap;
 	padding-left: 14%;
 	padding-right: 14%;
@@ -54,6 +54,32 @@ nav {
 	}
 }
 
+.nav-dropdown-1 {
+	background: #262626;
+	border: 1px solid #262626;
+	font-size: 0.95em;
+	a:hover {
+		color: #a9a9a9;
+	}
+}
+
+.dropdown {
+	
+}
+
+.nav-dropdown-2 {
+	background: #e5e5e5;
+	border: 1px solid #e5e5e5;
+	font-size: 0.95em;
+}
+
+.is-dropdown-submenu {
+	min-width: 135px;
+}
+
+.is-dropdown-submenu-parent a::after {
+	border: none;
+}
 
 .nav-mobile {
 	.logo {
