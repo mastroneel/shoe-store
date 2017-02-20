@@ -1,0 +1,157 @@
+{{!-- This is the base layout for your project, and will be used on every page. --}}
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Store</title>
+    <link rel="stylesheet" href="{{root}}assets/css/app.css">
+  </head>
+  <body>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      
+        <div class="nav-mobile off-canvas position-left" id="mobile-menu" data-off-canvas>
+          <ul>
+            <li><a href="#">NEW ARRIVALS</a></li>
+            <li><a href="#">HEELS</a></li>
+            <li><a href="#">FLATS</a></li>
+            <li><a href="#">SANDALS</a></li>
+            <li><a href="#">BOOTS</a></li>
+            <li><a href="#">SALE</a></li>
+          </ul>
+        </div>
+
+      <div class="off-canvas-content" data-off-canvas-content>
+        <!-- Page content -->
+        
+        <nav>
+          <!-- Nav moblile -->
+          <div class="nav-mobile show-for-small-only">
+            <button class="button" type="button" data-open="mobile-menu">Open Menu</button>
+          </div>
+        
+          <!-- Nav desktop -->
+          <div class="nav-desktop-1 show-for-medium">
+            <div class="row">
+              <div class="large-4 medium-4 columns">
+                <ul class="dropdown menu currency" data-dropdown-menu>
+                  <li>
+                  <a href="#">Select Currency</a>
+                <ul class="dropdown menu nav-dropdown-1" data-dropdown-menu>
+                  <li><a href="#">USD</a></li>
+                  <li><a href="#">CAD</a></li>
+                  <li><a href="#">EUR</a></li>
+                  <li><a href="#">GBP</a></li>
+                </ul>
+              </div>
+              <div class="shoestore large-4 medium-4 columns">
+                <a href="index.html"><span>Shoe Store</span></a>
+              </div>
+              <div class="large-4 medium-4 columns">
+                <a class="signup" href="#">Sign in / Sign up</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="nav-desktop-2 show-for-medium">
+            <div class="row">
+              <div class="large-2 medium-2 columns">
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li>
+                  <a href="past-month-1.html">NEW</a>
+                <ul class="dropdown menu nav-dropdown-2" data-dropdown-menu>
+                  <li><a href="past-week-1.html">PAST WEEK</a></li>
+                  <li><a href="past-month-1.html">PAST MONTH</a></li>
+                </ul>
+              </div>
+              <div class="large-2 medium-2 columns">
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li>
+                  <a href="all-heels-1.html">HEELS</a>
+                <ul class="dropdown menu nav-dropdown-2" data-dropdown-menu>
+                  <li><a href="high-heels-1.html">HIGH HEELS</a></li>
+                  <li><a href="mid-heels-1.html">MID HEELS</a></li>
+                  <li><a href="all-heels-1.html">VIEW ALL</a></li>
+                </ul>
+              </div>
+              <div class="large-2 medium-2 columns">
+                  <ul class="dropdown menu" data-dropdown-menu>
+                  <li>
+                  <a href="all-flats-1.html">FLATS</a>
+                <ul class="dropdown menu nav-dropdown-2" data-dropdown-menu>
+                  <li><a href="loafers-1.html">LOAFERS</a></li>
+                  <li><a href="brogues-1.html">BROGUES</a></li>
+                  <li><a href="sneakers-1.html">SNEAKERS</a></li>
+                  <li><a href="all-flats-1.html">VIEW ALL</a></li>
+                </ul>
+              </div>
+              <div class="large-2 medium-2 columns">
+                  <ul class="dropdown menu" data-dropdown-menu>
+                  <li>
+                  <a href="all-sandals-1.html">SANDALS</a>
+                <ul class="dropdown menu nav-dropdown-2" data-dropdown-menu>
+                  <li><a href="flat-sandals-1.html">FLAT SANDALS</a></li>
+                  <li><a href="heeled-sandals-1.html">HEELED SANDALS</a></li>
+                  <li><a href="wedges-1.html">WEDGES</a></li>
+                  <li><a href="all-sandals-1.html">VIEW ALL</a></li>
+                </ul>
+              </div>
+              <div class="large-2 medium-2 columns">
+                  <ul class="dropdown menu" data-dropdown-menu>
+                  <li>
+                  <a href="all-boots-1.html">BOOTS</a>
+                <ul class="dropdown menu nav-dropdown-2" data-dropdown-menu>
+                  <li><a href="tall-boots-1.html">TALL BOOTS</a></li>
+                  <li><a href="ankle-boots-1.html">ANKLE BOOTS</a></li>
+                  <li><a href="all-boots-1.html">VIEW ALL</a></li>
+                </ul>
+
+              </div>
+              <div class="large-2 medium-2 columns">
+                  <ul class="dropdown menu" data-dropdown-menu>
+                  <li>
+                  <a href="under-20-1.html">SALE</a>
+                <ul class="dropdown menu nav-dropdown-2" data-dropdown-menu>
+                  <li><a href="under-20-1.html">UNDER $20</a></li>
+                  <li><a href="under-10-1.html">UNDER $10</a></li>
+                </ul>
+              </div>
+
+              </div>
+            </div>
+          </div>
+
+        </nav>
+
+
+    {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+    {{> body}}
+
+      </div>
+    </div>
+
+    <div class="footer show-for-large">
+      <div class="row footer-1">
+        <ul>
+          <li><img href="#" src="assets/img/facebook.png"/></li>
+          <li><img href="#" src="assets/img/instagram.png"/></li>
+          <li><img href="#" src="assets/img/email.png"/></li>
+        </ul>
+      </div>
+      <hr>
+      <div class="row footer-2">
+        <ul>
+          <li><a href="#">Size Chart</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+    <script src="{{root}}assets/js/app.js"></script>
+  </body>
+</html>

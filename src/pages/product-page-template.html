@@ -1,0 +1,119 @@
+<head>
+    <script type="text/javascript">
+         function swap(image) {
+             document.getElementById("main").src = image.href;
+         }
+    </script>
+
+
+
+</head>
+
+<body>
+	<div class="row product-page-row show-for-medium">
+		<div class="row">
+			<div class="small-2 medium-2 large-2 columns product-thumbnails">
+     			<a href="assets/img/image-placeholder-1.png" onclick="swap(this); return false;"><img class="thumbnail" src="assets/img/image-placeholder-1.png"></a>
+
+
+     			<a href="assets/img/image-placeholder-2.png" onclick="swap(this); return false;"><img class="thumbnail" src="assets/img/image-placeholder-2.png"></a>
+
+
+     		</div>
+		<div class="small-5 medium-5 large-5 columns">
+
+			<a href="#" class="lightbox_trigger">
+    			<img id="main" class="product-image" src="assets/img/image-placeholder-1.png" width="550">
+
+    		</a>
+
+
+
+
+		</div>
+
+	<div class="small-5 medium-5 large-5 columns product-description">
+		<h1>PRODUCT NAME</h1>
+		</p>LOREM IPSUM DOLOR SIT AMET, CONSECTETUR ADIPISICING ELIT VEL NULLA VELIT<p>
+		<p class="price">$25</p>
+		<a class="button size" href="#">4</a>
+		<a class="button size" href="#">5</a>
+		<a class="button size" href="#">6</a>
+		<a class="button size" href="#">7</a>
+		<a class="button size" href="#">8</a>
+		<a class="button size" href="#">9</a>
+		<br>
+		<a class="button large add-to-cart" href="#">ADD TO CART</a>
+	</div>
+</div>
+
+
+<br>
+<br>
+                <a class="lightbox_trigger" href="assets/img/image-placeholder-1.png">
+                <img class="thumbnail" src="assets/img/image-placeholder-1.png" />
+                </a>
+                <a class="lightbox_trigger" href="assets/img/image-placeholder-2.png">
+                <img class="thumbnail" src="assets/img/image-placeholder-2.png" />
+                </a>
+
+
+<script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
+
+<script>
+jQuery(document).ready(function($) {
+	
+	$('.lightbox_trigger').click(function(e) {
+		
+		//prevent default action (hyperlink)
+		e.preventDefault();
+		
+		//Get clicked link href
+		var image_href = $(this).attr("href");
+		
+		/* 	
+		If the lightbox window HTML already exists in document, 
+		change the img src to to match the href of whatever link was clicked
+		
+		If the lightbox window HTML doesn't exists, create it and insert it.
+		(This will only happen the first time around)
+		*/
+		
+		if ($('#lightbox').length > 0) { // #lightbox exists
+			
+			//place href as img src value
+			$('#content').html('<img src="' + image_href + '" />');
+		   	
+			//show lightbox window - you could use .show('fast') for a transition
+			$('#lightbox').show();
+		}
+		
+		else { //#lightbox does not exist - create and insert (runs 1st time only)
+			
+			//create HTML markup for lightbox window
+			var lightbox = 
+			'<div id="lightbox">' +
+				'<p>Click to close</p>' +
+				'<div id="content">' + //insert clicked link's href into img src
+					'<img src="' + image_href +'" />' +
+				'</div>' +	
+			'</div>';
+				
+			//insert lightbox HTML into page
+			$('body').append(lightbox);
+		}
+		
+	});
+	
+	//Click anywhere on the page to get rid of lightbox window
+	$('#lightbox').live('click', function() { //must use live, as the lightbox element is inserted into the DOM
+		$('#lightbox').hide();
+	});
+
+});
+</script>
+
+</body>
+
+
+
