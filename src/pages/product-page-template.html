@@ -1,4 +1,6 @@
 <head>
+
+	<!-- image swap js -->
     <script type="text/javascript">
          function swap(image) {
              document.getElementById("main").src = image.href;
@@ -13,6 +15,9 @@
 	<div class="row product-page-row show-for-medium">
 		<div class="row">
 			<div class="small-2 medium-2 large-2 columns product-thumbnails">
+     			
+			<!-- this is the image/thumbnail swap part -->
+
      			<a href="assets/img/image-placeholder-1.png" onclick="swap(this); return false;"><img class="thumbnail" src="assets/img/image-placeholder-1.png"></a>
 
 
@@ -22,8 +27,12 @@
      		</div>
 		<div class="small-5 medium-5 large-5 columns">
 
+			<!-- link that opens the lightbox....I need to make it so that when you click on the big image, the lightbox with that image opens up. I tried two javascript if/else functions, one selecting for img src and one selecting for image size and I couldn't get either one to work...HELP PLEASE!!  -->
 			<a href="#" class="lightbox_trigger">
+
+
     			<img id="main" class="product-image" src="assets/img/image-placeholder-1.png" width="550">
+
 
     		</a>
 
@@ -50,6 +59,8 @@
 
 <br>
 <br>
+			<!-- lightbox thumbnails...you can ignore these, I will remove them once I get everything working! -->
+
                 <a class="lightbox_trigger" href="assets/img/image-placeholder-1.png">
                 <img class="thumbnail" src="assets/img/image-placeholder-1.png" />
                 </a>
@@ -60,6 +71,7 @@
 
 <script src="https://code.jquery.com/jquery-1.6.2.min.js"></script>
 
+<!-- js for the lightbox -->
 <script>
 jQuery(document).ready(function($) {
 	
