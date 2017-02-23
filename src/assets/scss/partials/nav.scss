@@ -26,10 +26,12 @@ nav {
 		font-family: Covered By Your Grace;
 		font-size: 2em;
 	}
-	.signup {
+	.shopping-bag {
 		float: right;
+		height: 35px;
+		padding-top: 12px;
 	}
-	.currency, .signup {
+	.currency, {
 		padding-top: 10px;
 	}
 }
@@ -47,10 +49,14 @@ nav {
 	}
 	a:hover {
 		color: rgba(0, 0, 0, 1);
-		transition: ease-in-out 0.15s;
+
 	}
 	a:visited {
 		color: rgba(0, 0, 0, 0.85);
+	}
+	.new {
+		padding-top: 0;
+		margin-top: -10px;
 	}
 }
 
@@ -77,15 +83,54 @@ nav {
 	border: none;
 }
 
+
+
 .nav-mobile {
-	.logo {
-
-	}
+	background: rgba(0, 0, 0, 0.85);
+	height: 50px;
 	.mobile-menu-button {
-
+		background: transparent;
+		margin-top: 0;
+		padding-top: 5px;
 	}
+	a {
+		color: #fff;
+	}
+	.shoestore-mobile {
+		font-family: Covered By Your Grace;
+		font-size: 2em;
+		text-align: center;
+	}
+	.shopping-bag {
+		height: 35px;
+		float: right;
+		padding-top: 10px;
+		padding-right: 10px;
+	}
+
+}
+
+#mobile-menu {
+	background: #262626;
+	text-align: center;
+	letter-spacing: 1px;
+	font-family: Raleway;
 	ul {
 		list-style-type: none;
 	}
-
+	a {
+		color: #fff;
+	}
+	.mobile-category {
+		font-weight: bold;
+		font-size: 1.4em;
+		margin-top: 20px;
+	}
+	.mobile-subcategory {
+		font-size: 0.7em;
+		font-weight: normal;
+	}
+	.is-accordion-submenu-parent > a::after {
+		border: none;
+	}
 }

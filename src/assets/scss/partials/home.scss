@@ -25,10 +25,12 @@
 
 }
 
-.orbit-next:hover {
-	background: transparent;
-
+.orbit-previous, .orbit-next, .orbit-previous:hover, .orbit-next:hover, .orbit-previous:active, .orbit-next:active, .orbit-previous:focus, .orbit-next:focus {
+	background: none;
 }
+
+
+
 
 .shop-button {
 	background: rgba(0, 0, 0, 0.80);
