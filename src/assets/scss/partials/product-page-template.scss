@@ -2,6 +2,7 @@
 	margin-top: 7%;
 	margin-left: 10%;
 	margin-right: 10%;
+	margin-bottom: 220px;
 	text-align: center;
 	font-family: Raleway;
 	.product-image {
@@ -81,5 +82,30 @@
 #lightbox img {
     max-width:940px;
     margin-top: 5%;
+}
+
+
+// *************
+// MEDIA QUERIES
+// *************
+
+@media only screen and (min-width: 630px) and (max-width: 840px) {
+	.product-page-row {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.product-description {
+		font-size: 0.8em;
+	}
+	.size {
+		font-size: 0.8em;
+		font-weight: bold;
+	}
+	.product-image {
+		padding-top: 30px;
+	}
+	.product-thumbnails {
+		padding-top: 25px;
+	}
 }
 

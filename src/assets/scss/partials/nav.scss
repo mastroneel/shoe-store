@@ -131,6 +131,33 @@ nav {
 		font-weight: normal;
 	}
 	.is-accordion-submenu-parent > a::after {
-		border: none;
+		border: transparent;
+	}
+	.first-option:focus {
+		outline: none;
+	}
+}
+
+
+// ******
+// FOOTER
+// ******
+
+.footer {
+	height: 200px;
+	margin-top: 150px;
+	background: rgba(0, 0, 0, 0.85);
+}
+
+
+// *************
+// MEDIA QUERIES
+// *************
+
+@media only screen and (max-width: 460px) {
+	.shoestore-mobile {
+		span {
+			font-size: 25px;
+		}
 	}
 }
