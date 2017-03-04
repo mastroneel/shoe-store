@@ -161,3 +161,17 @@ nav {
 		}
 	}
 }
+
+@media only screen and (min-width: 10px) and (max-width: 460px) {
+	.shoestore-mobile {
+		span {
+			font-size: 18px;
+		}
+	}
+	.mobile-menu-button {
+		margin-left: -20px;
+	}
+	.shopping-bag {
+		margin-right: -10px;
+	}
+}
